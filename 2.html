@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvGoo - Invitaciones Virtuales Premium</title>
+    
+    <!-- Fuente: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Iconos (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuración de Colores -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#000000',
+                            dark: '#0a0a0a',
+                            yellow: '#FFD700',
+                            gray: '#1f1f1f',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        .glow-hover:hover { box-shadow: 0 0 15px rgba(255, 215, 0, 0.3); transition: 0.3s; }
+    </style>
+</head>
+<body class="bg-brand-black text-white font-sans antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="flex items-center justify-between px-6 py-4 bg-brand-black/90 sticky top-0 z-50 border-b border-gray-800">
+        <div class="flex items-center">
+            <!-- LOGO: Si tienes un logo en imagen, usa: <img src="img/logo.png" class="h-8"> -->
+            <div class="bg-brand-yellow text-brand-black font-bold text-xl px-2 py-1 tracking-tighter">
+                InvGoo
+            </div>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+            <a href="#planes" class="hover:text-brand-yellow transition">Planes</a>
+            <a href="#proceso" class="hover:text-brand-yellow transition">Cómo Funciona</a>
+            <a href="#faq" class="hover:text-brand-yellow transition">FAQ</a>
+        </div>
+        <a href="https://wa.me/59174215401" class="bg-transparent border border-brand-yellow text-brand-yellow px-4 py-2 rounded text-sm font-bold hover:bg-brand-yellow hover:text-black transition">
+            Contacto
+        </a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative overflow-hidden px-6 py-16 md:py-24 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="w-full md:w-1/2 space-y-6 z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                Tu evento es único. <br>
+                <span class="text-brand-yellow">Tu invitación no puede ser una plantilla.</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-lg">
+                Invitaciones web 100% personalizadas para Bodas, Cumpleaños y Graduaciones. Olvida Canva; programamos experiencias interactivas reales.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                <a href="#planes" class="bg-brand-yellow text-black px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition shadow-[0_0_20px_rgba(255,215,0,0.4)] text-center">
+                    Ver Experiencias
+                </a>
+            </div>
+        </div>
+        
+        <div class="w-full md:w-1/2 relative flex justify-center">
+            <!-- IMAGEN PRINCIPAL (HERO) -->
+            <!-- Asegúrate de guardar tu imagen como 'hero.png' dentro de la carpeta 'img' -->
+            <img src="img/hero.png" 
+                 onerror="this.src='https://placehold.co/300x600/1a1a1a/FFF?text=Falta+img/hero.png'"
+                 alt="Invitación InvGoo en Celular" 
+                 class="rounded-3xl border-4 border-gray-800 shadow-2xl w-[280px] md:w-[320px] transform rotate-[-3deg] hover:rotate-0 transition duration-500 object-cover">
+        </div>
+    </header>
+
+    <!-- CÓMO FUNCIONA -->
+    <section id="proceso" class="py-20 bg-brand-dark px-6">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">¿Cómo funciona?</h2>
+            <p class="text-gray-400">Tu invitación lista en 3 simples pasos</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="bg-brand-gray p-8 rounded-2xl border border-gray-800 text-center hover:border-brand-yellow transition group">
+                <div class="w-16 h-16 bg-brand-yellow/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-yellow transition">
+                    <i class="fa-solid fa-list-check text-2xl text-brand-yellow group-hover:text-black"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">1. Elige tu Plan</h3>
+                <p class="text-gray-400 text-sm">Selecciona entre Básico, Normal (3D) o Premium.</p>
+            </div>
+            <div class="bg-brand-gray p-8 rounded-2xl border border-gray-800 text-center hover:border-brand-yellow transition group">
+                <div class="w-16 h-16 bg-brand-yellow/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-yellow transition">
+                    <i class="fa-solid fa-wand-magic-sparkles text-2xl text-brand-yellow group-hover:text-black"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">2. Personalización Total</h3>
+                <p class="text-gray-400 text-sm">Nos envías tus fotos y datos. Nosotros programamos todo.</p>
+            </div>
+            <div class="bg-brand-gray p-8 rounded-2xl border border-gray-800 text-center hover:border-brand-yellow transition group">
+                <div class="w-16 h-16 bg-brand-yellow/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-yellow transition">
+                    <i class="fa-brands fa-whatsapp text-2xl text-brand-yellow group-hover:text-black"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">3. Comparte y Sorprende</h3>
+                <p class="text-gray-400 text-sm">Recibes tu link único y lo envías por WhatsApp.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLANES Y PRECIOS -->
+    <section id="planes" class="py-20 px-6 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-16">Elige tu <span class="text-brand-yellow">Experiencia</span></h2>
+        
+        <div class="grid md:grid-cols-3 gap-8 items-start">
+            
+            <!-- PLAN BÁSICO -->
+            <div class="bg-brand-gray rounded-2xl overflow-hidden border border-gray-800 flex flex-col glow-hover">
+                <!-- Contenedor de Imagen -->
+                <div class="h-64 bg-gray-800 relative overflow-hidden group">
+                     <!-- 
+                        IMAGEN PLAN BÁSICO: 
+                        Guarda tu foto en la carpeta 'img' con el nombre 'plan-basico.jpg'
+                     -->
+                    <img src="img/plan-basico.jpg" 
+                         onerror="this.src='https://placehold.co/400x600/222/FFF?text=Falta+img/plan-basico.jpg'"
+                         alt="Vista Previa Plan Básico"
+                         class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500">
+                </div>
+                
+                <div class="p-8 flex-1 flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2">Básico</h3>
+                    <p class="text-gray-400 text-sm mb-6 h-10">La esencia elegante. Un sobre interactivo que sorprende al abrir.</p>
+                    <div class="text-3xl font-bold text-white mb-6">50Bs <span class="text-sm font-normal text-gray-500">/ único</span></div>
+                    
+                    <ul class="space-y-3 mb-8 text-gray-300 text-sm flex-1">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-yellow mt-1 mr-3"></i> Sobre Interactivo (Animación)</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-yellow mt-1 mr-3"></i> Foto del Festejado</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-yellow mt-1 mr-3"></i> Info Básica (Fecha/Hora)</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-yellow mt-1 mr-3"></i> Botón GPS (Google Maps)</li>
+                    </ul>
+                    
+                    <a href="https://wa.me/59174215401?text=Hola,%20me%20interesa%20el%20Plan%20Basico" class="block w-full text-center border border-gray-600 py-3 rounded-lg font-bold hover:border-brand-yellow hover:text-brand-yellow transition">
+                        Lo quiero
+                    </a>
+                </div>
+            </div>
+
+            <!-- PLAN NORMAL (DESTACADO) -->
+            <div class="bg-brand-gray rounded-2xl overflow-hidden border-2 border-brand-yellow transform md:-translate-y-4 shadow-[0_0_30px_rgba(255,215,0,0.15)] flex flex-col">
+                <div class="bg-brand-yellow text-black text-center text-xs font-bold py-1 uppercase tracking-widest">Más Popular</div>
+                
+                <!-- Contenedor de Imagen -->
+                <div class="h-64 bg-gray-800 relative overflow-hidden group">
+                     <!-- 
+                        IMAGEN PLAN NORMAL: 
+                        Guarda tu foto en la carpeta 'img' con el nombre 'plan-normal.jpg'
+                     -->
+                    <img src="img/plan-normal.jpg" 
+                         onerror="this.src='https://placehold.co/400x600/333/FFF?text=Falta+img/plan-normal.jpg'"
+                         alt="Vista Previa Plan Normal"
+                         class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition duration-500">
+                </div>
+
+                <div class="p-8 flex-1 flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2 text-brand-yellow">Normal</h3>
+                    <p class="text-gray-300 text-sm mb-6 h-10">Experiencia inmersiva. Diseño visual impactante con 3D.</p>
+                    <div class="text-3xl font-bold text-white mb-6">100Bs <span class="text-sm font-normal text-gray-500">/ único</span></div>
+                    
+                    <ul class="space-y-3 mb-8 text-white text-sm flex-1">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-yellow mt-1 mr-3"></i> <strong>Todo lo del Básico +</strong></li>
+                        <li class="flex items-start"><i class="fa-solid fa-cube text-brand-yellow mt-1 mr-3"></i> <strong>Fondo 3D Interactivo</strong></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-yellow mt-1 mr-3"></i> Cuenta Regresiva Animada</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-yellow mt-1 mr-3"></i> RSVP (Confirmación)</li>
+                    </ul>
+                    
+                    <a href="https://wa.me/59174215401?text=Hola,%20me%20interesa%20el%20Plan%20Normal" class="block w-full text-center bg-brand-yellow text-black py-3 rounded-lg font-bold hover:bg-yellow-400 transition shadow-lg">
+                        Lo quiero
+                    </a>
+                </div>
+            </div>
+
+            <!-- PLAN PREMIUM -->
+            <div class="bg-brand-gray rounded-2xl overflow-hidden border border-gray-800 flex flex-col glow-hover">
+                
+                <!-- Contenedor de Imagen -->
+                <div class="h-64 bg-gray-800 relative overflow-hidden group">
+                     <!-- 
+                        IMAGEN PLAN PREMIUM: 
+                        Guarda tu foto en la carpeta 'img' con el nombre 'plan-premium.jpg'
+                     -->
+                    <img src="img/plan-premium.jpg" 
+                         onerror="this.src='https://placehold.co/400x600/222/FFF?text=Falta+img/plan-premium.jpg'"
+                         alt="Vista Previa Plan Premium"
+                         class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500">
+                </div>
+
+                <div class="p-8 flex-1 flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2">Premium</h3>
+                    <p class="text-gray-400 text-sm mb-6 h-10">Logística total. Diseño editorial sin 3D, enfocado en datos.</p>
+                    <div class="text-3xl font-bold text-white mb-6">150Bs <span class="text-sm font-normal text-gray-500">/ único</span></div>
+                    
+                    <ul class="space-y-3 mb-8 text-gray-300 text-sm flex-1">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-yellow mt-1 mr-3"></i> <strong>Sin 3D (Estilo Editorial)</strong></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-yellow mt-1 mr-3"></i> Galería & Dedicatorias</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-yellow mt-1 mr-3"></i> Itinerario & Calendar</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-yellow mt-1 mr-3"></i> Regalos (QR) & Clima</li>
+                    </ul>
+                    
+                    <a href="https://wa.me/59174215401?text=Hola,%20me%20interesa%20el%20Plan%20Premium" class="block w-full text-center border border-gray-600 py-3 rounded-lg font-bold hover:border-brand-yellow hover:text-brand-yellow transition">
+                        Lo quiero
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-brand-dark px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Preguntas Frecuentes</h2>
+            <div class="space-y-4">
+                <details class="bg-brand-gray rounded-lg border border-gray-800 group">
+                    <summary class="flex justify-between items-center cursor-pointer p-6 font-semibold hover:text-brand-yellow transition">
+                        ¿Es una imagen o una página web real?
+                        <span class="transform group-open:rotate-180 transition text-brand-yellow">▼</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-400 text-sm">
+                        Es una página web 100% real programada. Tiene su propia URL única, animaciones y botones funcionales.
+                    </div>
+                </details>
+                <details class="bg-brand-gray rounded-lg border border-gray-800 group">
+                    <summary class="flex justify-between items-center cursor-pointer p-6 font-semibold hover:text-brand-yellow transition">
+                        ¿Cuánto tardan en entregar?
+                        <span class="transform group-open:rotate-180 transition text-brand-yellow">▼</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-400 text-sm">
+                        Entregamos entre 48 y 72 horas después de recibir tu información.
+                    </div>
+                </details>
+		/details>
+                <details class="bg-brand-gray rounded-lg border border-gray-800 group">
+                    <summary class="flex justify-between items-center cursor-pointer p-6 font-semibold hover:text-brand-yellow transition">
+                        ¿Si lo necesito en menos tiempo de entrega?
+                        <span class="transform group-open:rotate-180 transition text-brand-yellow">▼</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-400 text-sm">
+                        Contactanos con el icono de cotizar ya!
+                    </div>
+                </details>
+                <details class="bg-brand-gray rounded-lg border border-gray-800 group">
+                    <summary class="flex justify-between items-center cursor-pointer p-6 font-semibold hover:text-brand-yellow transition">
+                        ¿Cómo se envía?
+                        <span class="transform group-open:rotate-180 transition text-brand-yellow">▼</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-400 text-sm">
+                        Te damos un link. Solo copias y pegas en WhatsApp, Telegram o Messenger.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black border-t border-gray-800 pt-16 pb-8 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <div class="bg-brand-yellow text-brand-black font-bold text-xl px-2 py-1 inline-block mb-4">InvGoo</div>
+                <p class="text-gray-500 text-sm">Llevamos tus invitaciones al siguiente nivel.</p>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <h4 class="font-bold text-white">Síguenos</h4>
+                <div class="flex space-x-4">
+                    <a href="https://instagram.com" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-yellow hover:text-black transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://tiktok.com" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-yellow hover:text-black transition"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-yellow hover:text-black transition"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center">
+                <a href="https://wa.me/59174215401" class="bg-brand-yellow text-black text-center py-4 rounded-lg font-bold text-lg hover:bg-white transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    Cotizar Ahora
+                </a>
+            </div>
+        </div>
+        <div class="text-center text-gray-700 text-xs border-t border-gray-900 pt-8">
+            &copy; 2024 InvGoo. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+</html>
